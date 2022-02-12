@@ -1,0 +1,97 @@
+*,*::before,*::after {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary: #f40498;
+    --secondary: #00865e;
+
+  
+    --negative-0: #000000;
+    --negative-1: #101010;
+    --negative-2: #202020;
+
+    --positive-0: #ffffff;
+    --positive-1: #efefef;
+    --positive-2: #e0e0e0;
+  }
+  
+html {
+    font-family: serif;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: system, sans-serif;
+}
+  
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: var(--negative-0);
+    color: var(--positive-0);
+}
+
+main {
+    padding: 5rem 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+button, input, textarea {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--negative-1);
+    color: inherit;
+
+    transition: all .2s;
+}
+
+button:focus, input:focus, textarea:focus {
+    background-color: var(--negative-2);
+    outline: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.primary {
+    border: 2px solid var(--primary);
+}
+
+.secondary {
+    border: 2px solid var(--secondary);
+}

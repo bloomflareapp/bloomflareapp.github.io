@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloomflare</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="assets/app.js" type="module"></script>
+    <script src="assets/login.js" type="module"></script>
+
+</head>
+<body>
+    <main>
+        <form id="login_form" method="dialog">
+            <h1>Sign in</h1>
+            <label for="email">
+                Email
+                <input type="email" name="email" id="email" required>
+            </label>
+            <label for="password">
+                Password or passphrase
+                <input type="password" name="password" id="password" minlength="8" required>
+            </label>
+            <div class="row">
+                <button id="login" class="primary">
+                    <span class="material-icons">
+                        fingerprint
+                        </span>
+                    Login</button>
+                <button type="button" id="signup" class="secondary">
+                    <span class="material-icons">
+                    person_add
+                    </span>
+                    Sign Up
+                </button>
+            </div>
+        </form>
+
+    </main>
+</body>
+</html>
