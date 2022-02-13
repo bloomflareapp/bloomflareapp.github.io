@@ -5,4 +5,12 @@ export class User {
 
       console.log(email, password);
     }
+
+    signIn() {
+        return "Ok";
+    }
+
+    signUp(username, name) {
+        return(`Ok, ${username}, ${name}`);
+    }
 }
