@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up | bloomflare</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="assets/app.js" type="module"></script>
+    <script src="assets/signup.js" type="module"></script>
+
+</head>
+<body>
+    <main>
+        <form id="signup_form" method="dialog">
+            <h1>Sign up</h1>
+            <label for="email">
+                Email
+                <input type="email" name="email" id="email" required>
+            </label>
+            <label for="username">
+                Username
+                <input type="text" name="username" id="username" minlength="1" required>
+            </label>
+            <label for="name">
+                Name or Nickname
+                <input type="name" name="name" id="name" minlength="1" required>
+            </label>
+            <label for="password">
+                Password or passphrase
+                <input type="password" name="password" id="password" minlength="8" required>
+            </label>
+            <div class="row gap">
+                <a href="/signin.html">Sign in instead</a>
+                <button id="signup" class="secondary">
+                    <span class="material-icons">
+                    person_add
+                    </span>
+                    Sign up
+                </button>
+            </div>
+        </form>
+
+    </main>
+</body>
+</html>
